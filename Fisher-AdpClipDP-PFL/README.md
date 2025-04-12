@@ -28,12 +28,17 @@
     pip install fedlab torch
 
 ## Running the Experiment
-    ```bash
-    python main.py
+```bash
+# Baseline: FedDPA original framework
+python base.py
+
+# Proposed: Our improved algorithm
+python main_ours.py
+```bash
 
 ## Notes
 1. **CIFAR-10** dataset is the default dataset used for the example configuration. Modify the dataset option in `dataset` if you're using a different dataset.
-2. Customize the privacy settings based on your specific requirements for `epsilon`, `delta`, `clipping bounds`, and `noise multipliers`.
+2. Customize the privacy settings based on your specific requirements for `epsilon`, `delta`, `clipping bounds`,`noise multipliers` and `dir_alpha`.
 3. This version directs users to the `options.py` file for configuration details and highlights the key parameters to focus on.
 
 
